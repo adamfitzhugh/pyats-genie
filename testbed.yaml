@@ -1,0 +1,20 @@
+---
+testbed:
+  name: pyATS
+  credentials:
+    default:
+      username: "cisco"
+      password: "cisco"
+    enable:
+      password: cisco
+
+devices:
+  IOL-1:
+    os: ios
+    type: iol
+    connections:
+      defaults:
+        class: unicon.Unicon
+      ssh:
+        protocol: ssh
+        ip: 192.168.161.21
