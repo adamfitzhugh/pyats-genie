@@ -1,0 +1,207 @@
++++ ios-2: executing command 'show vrf' +++
+show vrf
+ios-2#
++++ ios-2: executing command 'show interfaces' +++
+show interfaces
+Ethernet0/0 is up, line protocol is up (connected) 
+  Hardware is Ethernet, address is aabb.cc00.4000 (bia aabb.cc00.4000)
+  Internet address is 192.168.161.21/24
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto-duplex, Auto-speed, media type is unknown
+  input flow-control is off, output flow-control is unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 1/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     378 packets input, 45752 bytes, 0 no buffer
+     Received 49 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     280 packets output, 42922 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet0/1 is up, line protocol is up (connected) 
+  Hardware is AmdP2, address is aabb.cc00.4010 (bia aabb.cc00.4010)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto-duplex, Auto-speed, media type is unknown
+  input flow-control is off, output flow-control is unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/2000/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     474 packets output, 39168 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet0/2 is up, line protocol is up (connected) 
+  Hardware is AmdP2, address is aabb.cc00.4020 (bia aabb.cc00.4020)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto-duplex, Auto-speed, media type is unknown
+  input flow-control is off, output flow-control is unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/2000/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     474 packets output, 39168 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet0/3 is up, line protocol is up (connected) 
+  Hardware is AmdP2, address is aabb.cc00.4030 (bia aabb.cc00.4030)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto-duplex, Auto-speed, media type is unknown
+  input flow-control is off, output flow-control is unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/2000/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     474 packets output, 39168 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+ios-2#
++++ ios-2: executing command 'show interfaces accounting' +++
+show interfaces accounting
+Ethernet0/0 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+                      IP        368      35719        283      40178
+                 DEC MOP          2        154          2        154
+                     ARP         13        780          9        540
+                     CDP         23      10801         23      10800
+Ethernet0/1 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+                   Other          0          0         52       3900
+                 DEC MOP          0          0          2        154
+           Spanning Tree          0          0        397      23820
+                     CDP          0          0         23      11294
+Ethernet0/2 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+                   Other          0          0         52       3900
+                 DEC MOP          0          0          2        154
+           Spanning Tree          0          0        397      23820
+                     CDP          0          0         23      11294
+Ethernet0/3 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+                   Other          0          0         52       3900
+                 DEC MOP          0          0          2        154
+           Spanning Tree          0          0        397      23820
+                     CDP          0          0         23      11294
+ios-2#
++++ ios-2: executing command 'show ip interface' +++
+show ip interface
+Ethernet0/0 is up, line protocol is up
+  Internet address is 192.168.161.21/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Probe proxy name replies are disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  IPv4 WCCP Redirect outbound is disabled
+  IPv4 WCCP Redirect inbound is disabled
+  IPv4 WCCP Redirect exclude is disabled
+Ethernet0/1 is up, line protocol is up
+  Inbound  access list is not set
+Ethernet0/2 is up, line protocol is up
+  Inbound  access list is not set
+Ethernet0/3 is up, line protocol is up
+  Inbound  access list is not set
+ios-2#
++++ ios-2: executing command 'show ipv6 interface' +++
+show ipv6 interface
+ios-2#
+Could not learn <class 'genie.libs.parser.iosxe.show_interface.ShowIpv6Interface'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Interface'                                                                                                          |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowInterfaces'>, arguments: {'interface':''}                                                |
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowInterfacesAccounting'>, arguments: {'intf':''}                                           |
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowIpInterface'>, arguments: {'interface':''}                                               |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrf'>, arguments: {'vrf':''}                                                                   |
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowIpv6Interface'>, arguments: {'interface':''}                                             |
+|====================================================================================================================================================|

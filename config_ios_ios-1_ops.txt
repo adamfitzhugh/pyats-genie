@@ -1,0 +1,43 @@
+{
+  "Building configuration...": {},
+  "Current configuration : 954 bytes": {},
+  "boot-end-marker": {},
+  "boot-start-marker": {},
+  "clock timezone EET 2 0": {},
+  "control-plane": {},
+  "enable secret 5 $1$NRom$pyH1.Gge8e3wydSypdPqp0": {},
+  "end": {},
+  "hostname ios-1": {},
+  "interface Ethernet0/0": {
+    "duplex auto": {},
+    "ip address 192.168.161.20 255.255.255.0": {},
+    "no switchport": {}
+  },
+  "interface Ethernet0/1": {},
+  "interface Ethernet0/2": {},
+  "interface Ethernet0/3": {},
+  "ip cef": {},
+  "ip domain-name cisco.com": {},
+  "ip forward-protocol nd": {},
+  "line aux 0": {},
+  "line con 0": {
+    "logging synchronous": {}
+  },
+  "line vty 0 4": {
+    "login local": {},
+    "transport input all": {}
+  },
+  "no aaa new-model": {},
+  "no ip http secure-server": {},
+  "no ip http server": {},
+  "no ipv6 cef": {},
+  "no service password-encryption": {},
+  "service compress-config": {},
+  "service timestamps debug datetime msec": {},
+  "service timestamps log datetime msec": {},
+  "spanning-tree extend system-id": {},
+  "spanning-tree mode rapid-pvst": {},
+  "username cisco-ios password 0 ciscoios": {},
+  "version 15.2": {},
+  "vlan internal allocation policy ascending": {}
+}
