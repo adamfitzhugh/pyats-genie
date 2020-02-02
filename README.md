@@ -57,7 +57,7 @@
 - Genie makes data structure output the SAME regardless if the commands run on an IOS-XE/XR or NXOS device which makes it easier for comparisons
 
 
-## Extra Curricular Reading
+## Extra Curricular
 - Look into Genie Triggers
     - Example: tries to re-establish BGP peers if they go down
 
@@ -76,6 +76,6 @@
     - https://github.com/hpreston/netdevops_demos/tree/master/genie-cli-1
 
 
-## Videos
+## Videos
 - David Bombal & Hank Preston
     - https://www.youtube.com/watch?v=unOmwDsMj8k
