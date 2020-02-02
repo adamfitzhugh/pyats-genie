@@ -1,0 +1,147 @@
++++ ios-1: executing command 'show spanning-tree summary' +++
+show spanning-tree summary
+Switch is in rapid-pvst mode
+Root bridge for: VLAN0001
+Extended system ID                      is enabled
+Portfast Default                        is disabled
+Portfast Edge BPDU Guard Default        is disabled
+Portfast Edge BPDU Filter Default       is disabled
+Loopguard Default                       is disabled
+PVST Simulation Default                 is enabled but inactive in rapid-pvst mode
+Bridge Assurance                        is enabled
+EtherChannel misconfig guard            is enabled
+Configured Pathcost method used is short
+UplinkFast                              is disabled
+BackboneFast                            is disabled
+
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0001                     0         0        0          2          2
+---------------------- -------- --------- -------- ---------- ----------
+1 vlan                       0         0        0          2          2
+ios-1#
++++ ios-1: executing command 'show errdisable recovery' +++
+show errdisable recovery
+ErrDisable Reason            Timer Status
+-----------------            --------------
+arp-inspection               Disabled
+bpduguard                    Disabled
+channel-misconfig (STP)      Disabled
+dhcp-rate-limit              Disabled
+dtp-flap                     Disabled
+gbic-invalid                 Disabled
+inline-power                 Disabled
+l2ptguard                    Disabled
+link-flap                    Disabled
+mac-limit                    Disabled
+link-monitor-failure         Disabled
+loopback                     Disabled
+oam-remote-failure           Disabled
+pagp-flap                    Disabled
+port-mode-failure            Disabled
+pppoe-ia-rate-limit          Disabled
+psecure-violation            Disabled
+security-violation           Disabled
+sfp-config-mismatch          Disabled
+storm-control                Disabled
+udld                         Disabled
+unicast-flood                Disabled
+vmps                         Disabled
+psp                          Disabled
+dual-active-recovery         Disabled
+evc-lite input mapping fa    Disabled
+Recovery command: "clear     Disabled
+
+Timer interval: 300 seconds
+
+Interfaces that will be enabled at the next timeout:
+
+ios-1#
++++ ios-1: executing command 'show spanning-tree mst detail' +++
+show spanning-tree mst detail
+% Switch is not in mst mode
+
+ios-1#
++++ ios-1: executing command 'show spanning-tree mst configuration' +++
+show spanning-tree mst configuration
+% Switch is not in mst mode
+Name      []
+Revision  0     Instances configured 1
+
+Instance  Vlans mapped
+--------  ---------------------------------------------------------------------
+0         1-4094
+-------------------------------------------------------------------------------
+ios-1#
++++ ios-1: executing command 'show spanning-tree detail' +++
+show spanning-tree detail
+
+ VLAN0001 is executing the rstp compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 1, address aabb.cc00.3000
+  Configured hello time 2, max age 20, forward delay 15, transmit hold-count 6
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 3 last change occurred 00:43:39 ago
+          from Ethernet0/1
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 0, topology change 0, notification 0, aging 300
+
+ Port 3 (Ethernet0/2) of VLAN0001 is designated forwarding 
+   Port path cost 100, Port priority 128, Port Identifier 128.3.
+   Designated root has priority 32769, address aabb.cc00.3000
+   Designated bridge has priority 32769, address aabb.cc00.3000
+   Designated port id is 128.3, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is shared by default
+   BPDU: sent 1320, received 0
+
+ Port 4 (Ethernet0/3) of VLAN0001 is designated forwarding 
+   Port path cost 100, Port priority 128, Port Identifier 128.4.
+   Designated root has priority 32769, address aabb.cc00.3000
+   Designated bridge has priority 32769, address aabb.cc00.3000
+   Designated port id is 128.4, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is shared by default
+   BPDU: sent 1320, received 0
+
+ios-1#
++++ ios-1: executing command 'show spanning-tree' +++
+show spanning-tree
+
+VLAN0001
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    32769
+             Address     aabb.cc00.3000
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     aabb.cc00.3000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Et0/2               Desg FWD 100       128.3    Shr 
+Et0/3               Desg FWD 100       128.4    Shr 
+
+
+ios-1#
++====================================================================================================================================================+
+| Commands for learning feature 'Stp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_spanning_tree.ShowSpanningTreeSummary'>                                                                  |
+|   cmd: <class 'genie.libs.parser.ios.show_spanning_tree.ShowErrdisableRecovery'>                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_spanning_tree.ShowSpanningTreeMstConfiguration'>                                                         |
+|   cmd: <class 'genie.libs.parser.ios.show_spanning_tree.ShowSpanningTreeDetail'>                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_spanning_tree.ShowSpanningTree'>                                                                         |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_spanning_tree.ShowSpanningTreeMstDetail'>                                                                |
+|====================================================================================================================================================|

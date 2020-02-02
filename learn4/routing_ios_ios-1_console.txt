@@ -1,0 +1,43 @@
++++ ios-1: executing command 'show vrf detail' +++
+show vrf detail
+ios-1#
++++ ios-1: executing command 'show ip route' +++
+show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is not set
+
+      172.16.0.0/16 is variably subnetted, 4 subnets, 2 masks
+C        172.16.10.0/24 is directly connected, Loopback101
+L        172.16.10.1/32 is directly connected, Loopback101
+C        172.16.30.0/24 is directly connected, Ethernet0/1
+L        172.16.30.1/32 is directly connected, Ethernet0/1
+      192.168.161.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.161.0/24 is directly connected, Ethernet0/0
+L        192.168.161.20/32 is directly connected, Ethernet0/0
+ios-1#
++++ ios-1: executing command 'show ipv6 route updated' +++
+show ipv6 route updated
+ios-1#
+Could not learn <class 'genie.libs.parser.ios.show_routing.ShowIpv6RouteUpdated'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_routing.ShowIpRouteDistributor'>, arguments: {'vrf':''}                                                  |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrfDetail'>                                                                                    |
+|   cmd: <class 'genie.libs.parser.ios.show_routing.ShowIpv6RouteUpdated'>, arguments: {'vrf':''}                                                    |
+|====================================================================================================================================================|

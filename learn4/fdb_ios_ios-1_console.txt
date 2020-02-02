@@ -1,0 +1,35 @@
++++ ios-1: executing command 'show mac address-table aging-time' +++
+show mac address-table aging-time
+Global Aging Time:  300
+Vlan    Aging Time
+----    ----------
+ios-1#
++++ ios-1: executing command 'show mac address-table learning' +++
+show mac address-table learning
+show mac address-table learning
+                       ^
+% Invalid input detected at '^' marker.
+
+ios-1#
++++ ios-1: executing command 'show mac address-table' +++
+show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+ios-1#
+Could not learn <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTable'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Fdb'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTableAgingTime'>                                                                       |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTableLearning'>                                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTable'>                                                                                |
+|====================================================================================================================================================|

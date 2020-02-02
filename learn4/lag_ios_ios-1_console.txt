@@ -1,0 +1,64 @@
++++ ios-1: executing command 'show lacp sys-id' +++
+show lacp sys-id
+32768, aabb.cc80.3000
+ios-1#
++++ ios-1: executing command 'show etherchannel summary' +++
+show etherchannel summary
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      N - not in use, no aggregation
+        f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        m - not in use, port not aggregated due to minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+        A - formed by Auto LAG
+
+
+Number of channel-groups in use: 0
+Number of aggregators:           0
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+
+ios-1#
++++ ios-1: executing command 'show lacp neighbor' +++
+show lacp neighbor
+ios-1#
++++ ios-1: executing command 'show pagp neighbor' +++
+show pagp neighbor
+ios-1#
++++ ios-1: executing command 'show pagp internal' +++
+show pagp internal
+ios-1#
++++ ios-1: executing command 'show lacp counters' +++
+show lacp counters
+ios-1#
++++ ios-1: executing command 'show pagp counters' +++
+show pagp counters
+ios-1#
+s.parser.ios.show_lag.ShowLacpCounters'>
+Parser Output is empty
+Could not learn <class 'genie.libs.parser.ios.show_lag.ShowPagpCounters'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Lag'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowLacpSysId'>                                                                                      |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowEtherchannelSummary'>                                                                            |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowLacpNeighbor'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowPagpNeighbor'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowPagpInternal'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowLacpCounters'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowPagpCounters'>                                                                                   |
+|====================================================================================================================================================|

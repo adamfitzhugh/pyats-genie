@@ -1,0 +1,279 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "acls": {
+      "preauth_ipv4_acl": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 53
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 53
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "20"
+          },
+          "30": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "bootps"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "30"
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 68
+                    }
+                  }
+                }
+              }
+            },
+            "name": "40"
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "bootpc"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "50"
+          },
+          "60": {
+            "actions": {
+              "forwarding": "deny",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "60"
+          }
+        },
+        "name": "preauth_ipv4_acl",
+        "type": "ipv4-acl-type"
+      },
+      "preauth_ipv6_acl": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 53
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          },
+          "100": {
+            "actions": {
+              "forwarding": "deny",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv6": {
+                  "destination_ipv6_network": {
+                    "any": {
+                      "destination_ipv6_network": "any"
+                    }
+                  },
+                  "protocol": "ipv6",
+                  "source_ipv6_network": {
+                    "any": {
+                      "source_ipv6_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "100"
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 53
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "20"
+          },
+          "30": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "name": "30"
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "name": "40"
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "name": "50"
+          },
+          "60": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "name": "60"
+          },
+          "70": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "name": "70"
+          },
+          "80": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "547 any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "80"
+          },
+          "90": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "546 any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "90"
+          }
+        },
+        "name": "preauth_ipv6_acl",
+        "type": "ipv6-acl-type"
+      }
+    }
+  }
+}

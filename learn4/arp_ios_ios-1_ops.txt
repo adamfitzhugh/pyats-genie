@@ -1,0 +1,76 @@
+{
+  "_exclude": [
+    "in_requests_pkts",
+    "in_replies_pkts",
+    "in_requests_pkts",
+    "out_replies_pkts",
+    "out_requests_pkts",
+    "in_drops",
+    "in_replies_pkts",
+    "out_requests_pkts",
+    "out_total"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "interfaces": {
+      "Ethernet0/0": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "192.168.161.1": {
+              "ip": "192.168.161.1",
+              "link_layer_address": "0050.56c0.0008",
+              "origin": "dynamic"
+            },
+            "192.168.161.2": {
+              "ip": "192.168.161.2",
+              "link_layer_address": "0050.56e5.4c46",
+              "origin": "dynamic"
+            },
+            "192.168.161.20": {
+              "ip": "192.168.161.20",
+              "link_layer_address": "aabb.cc00.3000",
+              "origin": "static"
+            }
+          }
+        }
+      },
+      "Ethernet0/1": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "172.16.30.1": {
+              "ip": "172.16.30.1",
+              "link_layer_address": "aabb.cc00.3010",
+              "origin": "static"
+            }
+          }
+        }
+      },
+      "Loopback101": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        }
+      }
+    },
+    "statistics": {
+      "entries_total": 4,
+      "in_drops": 0,
+      "in_replies_pkts": 5,
+      "in_requests_pkts": 15,
+      "incomplete_total": 0,
+      "out_replies_pkts": 11,
+      "out_requests_pkts": 0
+    }
+  }
+}

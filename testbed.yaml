@@ -10,20 +10,30 @@ testbed:
 
 devices:
   ios-1:
+#    alias: ios
     os: ios
     type: iol
+#    tacacs:
+#      username:
+#      enable:
     connections:
       defaults:
         class: unicon.Unicon
       ssh:
         protocol: ssh
         ip: 192.168.161.20
+#        port:
   ios-2:
+#    alias: ios
     os: ios
     type: iol
+#    tacacs:
+#      username:
+#      enable:
     connections:
       defaults:
         class: unicon.Unicon
       ssh:
         protocol: ssh
         ip: 192.168.161.21
+#        port:

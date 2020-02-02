@@ -1,0 +1,10 @@
+{
+  "_exclude": [
+    "neighbor_state",
+    "age"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {}
+}

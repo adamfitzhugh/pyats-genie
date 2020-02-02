@@ -1,0 +1,6 @@
+Issue while building the feature
+
+Traceback (most recent call last):
+  File "src/genie/cli/commands/learn.py", line 312, in genie.cli.commands.learn.LearnCommand._retrieve_ops
+  File "src/genie/ops/base/base.py", line 110, in genie.ops.base.base.Base.learn
+NotImplementedError

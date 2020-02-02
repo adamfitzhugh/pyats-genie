@@ -1,0 +1,92 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "global": {
+      "bpdu_filter": false,
+      "bpdu_guard": false,
+      "bpduguard_timeout_recovery": 300,
+      "etherchannel_misconfig_guard": true,
+      "loop_guard": false
+    },
+    "mstp": {
+      "default": {
+        "domain": "default",
+        "name": "",
+        "revision": 0
+      }
+    },
+    "rapid_pvst": {
+      "default": {
+        "forwarding_delay": 15,
+        "hello_time": 2,
+        "hold_count": 6,
+        "max_age": 20,
+        "pvst_id": "default",
+        "vlans": {
+          "1": {
+            "bridge_address": "aabb.cc00.3000",
+            "bridge_priority": 32768,
+            "configured_bridge_priority": 32768,
+            "designated_root_address": "aabb.cc00.3000",
+            "designated_root_priority": 32769,
+            "forwarding_delay": 15,
+            "hello_time": 2,
+            "hold_count": 6,
+            "hold_time": 1,
+            "interfaces": {
+              "Ethernet0/2": {
+                "cost": 100,
+                "counters": {
+                  "bpdu_received": 0,
+                  "bpdu_sent": 1320
+                },
+                "designated_bridge_address": "aabb.cc00.3000",
+                "designated_bridge_priority": 32769,
+                "designated_cost": 0,
+                "designated_port_num": 3,
+                "designated_port_priority": 128,
+                "designated_root_address": "aabb.cc00.3000",
+                "designated_root_priority": 32769,
+                "forward_transitions": 1,
+                "name": "Ethernet0/2",
+                "port_num": 3,
+                "port_priority": 128,
+                "port_state": "forwarding",
+                "role": "designated"
+              },
+              "Ethernet0/3": {
+                "cost": 100,
+                "counters": {
+                  "bpdu_received": 0,
+                  "bpdu_sent": 1320
+                },
+                "designated_bridge_address": "aabb.cc00.3000",
+                "designated_bridge_priority": 32769,
+                "designated_cost": 0,
+                "designated_port_num": 4,
+                "designated_port_priority": 128,
+                "designated_root_address": "aabb.cc00.3000",
+                "designated_root_priority": 32769,
+                "forward_transitions": 1,
+                "name": "Ethernet0/3",
+                "port_num": 4,
+                "port_priority": 128,
+                "port_state": "forwarding",
+                "role": "designated"
+              }
+            },
+            "max_age": 20,
+            "sys_id_ext": 1,
+            "time_since_topology_change": "00:43:39",
+            "topology_changes": 3,
+            "vlan_id": 1
+          }
+        }
+      }
+    }
+  }
+}
