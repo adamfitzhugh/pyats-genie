@@ -1,16 +1,16 @@
 # pyATS_genie
 
-## Use Case
+## Use Cases
 - Network verification tool
 
 ## Installation
-Install genie as a whole
+- Install genie as a whole
 $ pip3 install genie
 
-To upgrade this package manually
+- To upgrade this package manually
 $ pip3 install --upgrade genie
 
-To install alpha/beta versions, add --pre
+- To install alpha/beta versions, add --pre
 $ pip3 install --pre genie
 
 
