@@ -5,27 +5,27 @@
 
 ## Installation
 - Install genie as a whole
-$ pip3 install genie
+    - $ pip3 install genie
 
 - To upgrade this package manually
-$ pip3 install --upgrade genie
+    - $ pip3 install --upgrade genie
 
 - To install alpha/beta versions, add --pre
-$ pip3 install --pre genie
+    - $ pip3 install --pre genie
 
 
 ## Genie Commands/Examples
 - Learn about device interfaces and output those files into a 'learn' folder
-$ genie learn interface --testbed testbed.yaml --device ios-1 --output learn
+    - $ genie learn interface --testbed testbed.yaml --device ios-1 --output learn
 
 - Run a diff against 2 directories/files
-$ genie diff learn learn2 --output diff1
+    - $ genie diff learn learn2 --output diff1
 
 - Learn all from Genie and output those files into a 'learn' folder
-$ genie learn all --testbed testbed.yaml --device ios-1 --output learn
+    - $ genie learn all --testbed testbed.yaml --device ios-1 --output learn
 
 - Run's a command against testbed file and stores the output
-$ genie parse "show ip ospf database router" --testbed testbed.yaml --device ios-1 --output quickdemo
+    - $ genie parse "show ip ospf database router" --testbed testbed.yaml --device ios-1 --output quickdemo
 
 
 ## Examples
